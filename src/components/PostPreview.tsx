@@ -2,7 +2,7 @@ import { PostMetadata } from "../models/PostMetadata";
 
 const PostPreview = (props: PostMetadata) => {
   return (
-    <article className="relative group text-white">
+    <article className="relative group text-white bg-slate-800 p-4 rounded-md">
       <div className="relative">
         <div className="flex">
           <a
