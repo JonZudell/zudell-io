@@ -4,27 +4,28 @@ const PostPreview = (props: PostMetadata) => {
   return (
     <article className="relative group text-white">
       <div className="relative">
-        <div>
-          <h3 className="text-base font-semibold tracking-tight text-white pt-8 lg:pt-0">
-            {props.title}
-          </h3>
-          <h3 className="text-base tracking-tight text-white pt-8 lg:pt-0">
-            {props.date}
-          </h3>
-        </div>
-        <div>
+        <div className="flex">
           <a
             className="flex items-center text-sm text-sky-500 font-medium"
             href={`/posts/${props.slug}`}
           >
-            <span className="absolute "></span>
-            <span className="relative">
-              Read more
-              <span className="sr-only">
-                , Tailwind CSS v3.4: Dynamic viewport units, :has() support,
-                balanced headlines, subgrid, and more
+            <div className="flex">
+              <div>
+                <h3 className="text-base font-semibold tracking-tight text-white pt-8 lg:pt-0">
+                  {props.title}
+                </h3>
+                <h3 className="text-base tracking-tight text-white pt-8 lg:pt-0">
+                  {props.date}
+                </h3>
+              </div>
+              <span className="absolute mt-3 right-0">
+                Read more &gt;
+                <span className="sr-only">
+                  , Tailwind CSS v3.4: Dynamic viewport units, :has() support,
+                  balanced headlines, subgrid, and more
+                </span>
               </span>
-            </span>
+            </div>
           </a>
         </div>
       </div>
