@@ -1,0 +1,6 @@
+[
+  {
+    "image" : "zudell-io",
+    "dockerfile" : "./"
+  }
+]
