@@ -68,6 +68,11 @@ export default function PostPage(props: any) {
                   className: "w-full mt-3",
                 },
               },
+              pre: {
+                props: {
+                  className: "p-2 my-2 border-2 bg-slate-700 border-black overflow-scroll overflow-y-hidden"
+                }
+              }
             },
           }}
         >
