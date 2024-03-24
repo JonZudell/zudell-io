@@ -22,14 +22,14 @@ export default function PostPage(props: any) {
   const slug = props.params.slug;
   const post = getPostContent(slug);
   return (
-    <div className="max-w-md mx-auto">
-      <div className="max-w-md mx-auto text-center">
+    <div className="max-w-lg mx-auto">
+      <div className="max-w-lg mx-auto text-center">
         <h1 className="text-2xl ">
           {post.data.title}
         </h1>
       </div>
 
-      <article className="prose max-w-mdmx-auto">
+      <article className="prose max-w-lg mx-auto p-2">
         <Markdown
           options={{
             overrides: {

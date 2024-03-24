@@ -8,7 +8,7 @@ export default function BlogPage() {
 
   return (
     <div className="max-w-md mx-auto">
-      <div className="space-y-16">{postPreviews}</div>
+      <div className="space-y-8">{postPreviews}</div>
     </div>
   );
 }

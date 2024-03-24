@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="mx-auto max-w-md text-center mt-4s">
+        <div className="mx-auto max-w-lg text-center mt-4">
           <a
             className="space-y-16 text-3xl font-semibold text-pink-400"
             href="/"
